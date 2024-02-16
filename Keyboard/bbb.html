@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Tabs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="center-container">
+        <h1>Platform and Language Selection</h1>
+
+        <div class="tab-container">
+            <!-- First Tab -->
+            <button class="tablink1" onclick="openTab('windows')">Windows</button>
+
+            <!-- Second Tab -->
+            <button class="tablink2" onclick="openTab('mobile')">Mobile</button>
+        </div>
+
+        <!-- Content for Tabs -->
+        <div id="windows" class="tabcontent">
+            <h2>Windows Content</h2>
+            <p>To enable virtual keyboard follow the steps below:</p>
+            <ul>
+                <p>➊Go to start</p>
+                <img src="start.jpeg">
+                <p>➋Then search for settings</p>
+                <img src="settings.PNG" alt="">
+                <p>➌Search for Accessibility</p>
+                <img src="assb.PNG" alt="">
+                <p>➍Head to keyboard</p>
+                <img src="keyboard.jpeg" alt="">
+                <p>➎Toggle on this option:</p>
+                <img src="toggle.jpeg" alt="">
+                <p>Install Hindi and Tamil under language and region tab</p>
+                <img src="addd.jpeg" alt="">
+            </ul>
+        </div>
+
+        <div id="mobile" class="tabcontent">
+            <h2>Mobile Content</h2>
+            <p>Follow the steps to change the keyboard:</p>
+            <ul>
+                <p>Head to your Keyboard settings</p>
+                <centre><img src="set.jpeg" alt="">
+                <p>Search for languages</p>
+                <img src="asd.jpeg" alt="">
+                <p>Search and add Hindi</p>
+                <img src="lan.jpeg" alt=""></centre>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function openTab(tabName) {
+            var i;
+            var x = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</body>
+</html>
+<style>
+/* Basic styling for tabs */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+img{
+    height: 300px;
+    width: 500px;   
+  float: left;
+  background-size: cover;
+
+}
+.center-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    
+}
+
+.tablink1{
+    margin-right: 40px;
+    border-collapse: separate;
+  border-spacing: 15px;
+    background-color: black; /* Blue button */
+    color: #fff;
+    padding: 20px 30px; /* Adjust padding to make tabs bigger */
+    border: 2px solid #000000; /* Add border around tabs */
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s;
+    font-size: 18px; /* Adjust font size to make tabs bigger */
+    position: relative; /* Add position relative */
+    z-index: 1; /* Ensure tablink is above dropdown content */
+}
+.tablink2{
+    border-collapse: separate;
+  border-spacing: 15px 50px;
+    background-color: #060606; /* Blue button */
+    color: #fff;
+    padding: 20px 30px; /* Adjust padding to make tabs bigger */
+    border: 2px solid #000000; /* Add border around tabs */
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s;
+    font-size: 18px; /* Adjust font size to make tabs bigger */
+    position: relative; /* Add position relative */
+    z-index: 1; /* Ensure tablink is above dropdown content */
+
+}
+.tablink:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ensure dropdown content is above tablink */
+    top: 100%; /* Position dropdown content below tablink */
+    left: 0; /* Align dropdown content with tablink */
+}
+
+.tablink:hover + .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    position: relative; /* Add position relative */
+    z-index: 1; /* Ensure tabcontent is above tablink */
+    font-size: 20px;
+}
+
+.tabcontent ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tabcontent ul li {
+    margin-bottom: 10px;
+}
+
+.tabcontent ul li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.tabcontent ul li a:hover {
+    color: #007bff; /* Blue on hover */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+     /* Replace 'background-image.jpg' with your actual image file */
+    background-size: cover;
+    background-position: center;
+}
+.windows{
+    text-size-adjust: 30px;
+}
+</style>

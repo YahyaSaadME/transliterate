@@ -1,0 +1,384 @@
+nav {
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.profile-box {
+    background-color: black;
+    padding: 8px;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-main {
+    position: absolute;
+    top: 50px;
+    width: fit-content;
+    background-color: white;
+    right: 10px;
+    box-shadow: 0px 0px 5px -1px black;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.profile-in {
+    display: flex;
+}
+
+.profile-head {
+    background-color: black;
+    padding: 8px;
+    margin-right: 10px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.logout {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 2px;
+    cursor: pointer;
+
+}
+
+.main {
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 26%;
+    padding-right: 10px;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    position: fixed;
+    width: 250px;
+    padding: 20px 5px 5px 5px;
+    box-shadow: 2px 2px 7px -2px black;
+    z-index: 1000;
+    background-color: white;
+    margin-top: 10vh;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow-y: hidden;
+}
+
+.search-contacts-inpt {
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 12px;
+    background-color: black;
+    color: white;
+    padding: 4px;
+}
+
+.search-contacts {
+    margin: 12px 6px 12px 6px;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.ai-div {
+    background-color: black;
+    height: 80px;
+    margin: 6px;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.contacts-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.contacts-li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px -2px black;
+    margin: 4px;
+    font-size: 16px;
+    padding: 30%;
+    cursor: pointer;
+    background-color: black;
+    color: white
+}
+
+.main-nav {
+    padding: 10px;
+    width: 70%;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-nav-select {
+    background-color: black;
+    color: white;
+    padding: 1vw;
+    border-radius: 5px;
+    font-size: 2vw;
+    max-width: 160px;
+}
+@media (min-width:400px) {
+    .main-nav-select {
+        background-color: black;
+        color: white;
+        padding: 1vw;
+        border-radius: 5px;
+        font-size: 12.2px;
+    }
+}
+@media (max-width:1023px) {
+    .main-nav{
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        position: absolute;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.chat-ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: end;
+    margin-top: 5rem;
+    padding-left: 12px;
+}
+
+.chat-div {
+    background-color: black;
+    border-radius: 3px;
+    padding: 4px 10px 4px 10px;
+    font-size: 12px;
+
+}
+
+.chat-li-UR {
+    list-style: none;
+    justify-self: end;
+    align-self: baseline;
+    color: white;
+    max-width: 50vw;
+}
+
+.chat-li-CR {
+    margin: 10px 0px 10px 0px;
+    list-style: none;
+    color: white;
+    padding: 4px 10px 4px 10px;
+    border-radius: 3px;
+    max-width: 50vw;
+}
+
+.chat-div-subs {
+    display: flex;
+
+}
+
+.chat-div-sub-svg {
+    margin-top: 2px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-in {
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-send-btn {
+    padding: 4px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.footer-in-mic {
+    padding: 4px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.footer-send-inpt {
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    width: 75vw;
+}
+
+.alert {
+    position: fixed;
+    right: 0;
+    bottom: 10%;
+    width: 50%;
+    background-color: rgb(254, 92, 92);
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.alert-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 12px 4px 12px;
+    cursor: pointer;
+}
+
+.qr-scanner {
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    width: 80vw;
+    height: fit-content;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.qr-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main-call {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100%;
+    z-index: 100000000;
+}
+
+.call-sq {
+    border-radius: 10px;
+    background-color: white;
+    border-bottom: 5px solid #cccccc;
+    height: 30vw;
+    width: 30vw;
+    background: #eee;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-callingbox {
+    text-align: center;
+    font-size: 10vw;
+    font-weight: bolder;
+}
+
+.call-name {
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+    font-weight: bolder;
+}
+
+.call-number {
+    font-size: 3vw;
+    color: gray;
+}
+
+.call-callingbox2 {
+    border-radius: 10px;
+    background-color: white;
+    border-bottom: 5px solid white;
+    background: #eee;
+    margin: 25px auto;
+    width: fit-content;
+    padding: 4px 10px 4px 10px;
+    font-size: 4vw;
+}
+
+.call-lang {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.call-dot {
+    margin-top: 150px;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 100%;
+    display: inline-block;
+    padding: 10px;
+}
+.call-end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup-selet-box{
+    width: 100%;
+    padding: 15px;
+    border-radius: 100px;
+}
